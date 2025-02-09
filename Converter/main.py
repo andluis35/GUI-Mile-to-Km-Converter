@@ -7,7 +7,7 @@ window = Tk()
 window.minsize(width=500, height=500)
 
 label = Label()
-label["text"] = "Texto"
+label["text"] = "Teste de Componentes"
 label.pack()
 
 button = Button(text="Click me!", command=button_clicked)
