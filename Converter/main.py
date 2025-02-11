@@ -13,7 +13,7 @@ label.pack()
 button = Button(text="Clique aqui!", command=button_clicked)
 button.pack()
 
-input_box = Entry(width=10)
+input_box = Entry(width=10, borderwidth=2)
 input_box.pack()
 
 window.mainloop()
