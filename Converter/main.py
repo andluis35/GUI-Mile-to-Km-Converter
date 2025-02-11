@@ -10,7 +10,7 @@ label = Label()
 label["text"] = "Teste de Componentes"
 label.pack()
 
-button = Button(text="Click me!", command=button_clicked)
+button = Button(text="Clique aqui!", command=button_clicked)
 button.pack()
 
 input_box = Entry(width=10)
