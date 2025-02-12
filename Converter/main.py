@@ -1,19 +1,27 @@
 from tkinter import *
 
-def button_clicked():
-    label["text"] = input_box.get()
-
 window = Tk()
-window.minsize(width=500, height=500)
+window.minsize(width=150,height=100)
+window.config(padx=20, pady=20)
+window.title("Miles to Kilometers")
 
-label = Label()
-label["text"] = "Teste de Componentes"
-label.pack()
+miles_input = Entry(width=6)
+miles_input.grid(column=1, row=0)
 
-button = Button(text="Clique aqui!", command=button_clicked)
-button.pack()
+miles_label = Label(text="Miles")
+miles_label.grid(column=2, row=0)
 
-input_box = Entry(width=10, borderwidth=2)
-input_box.pack()
+is_equal_label = Label(text="is equal to")
+is_equal_label.grid(column=0, row=1)
+
+kilometer_result_label = Label(text="0")
+kilometer_result_label.grid(column=1, row=1)
+
+kilometer_label = Label(text="Km")
+kilometer_label.grid(column=2, row=1)
+
+calculate_button = Button(text="Calculate")
+calculate_button.grid(column=1, row=2)
+
 
 window.mainloop()
